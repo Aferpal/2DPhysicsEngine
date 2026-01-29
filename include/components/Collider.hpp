@@ -1,7 +1,7 @@
 #ifndef _COLLIDER_
 #define _COLLIDER_ 
 
-#include "Vector2.hpp"
+#include <Vector2.hpp>
 
 
 namespace afp{

@@ -3,7 +3,7 @@
 
 #include<vector>
 #include "types.hpp"
-#include<iostream>
+
 namespace afp{
 
     template<typename T>

@@ -4,7 +4,6 @@
 #include<unordered_map>
 #include<Pool.hpp>
 #include<memory>
-#include<iostream>
 #include<View.hpp>
 
 namespace afp{

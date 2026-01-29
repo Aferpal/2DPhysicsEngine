@@ -23,19 +23,19 @@ namespace afp{
 
             //GETTERS
 
-            inline const Vector2& center() const;
+            const Vector2& center() const;
 
-            inline Vector2& center();
+            Vector2& center();
 
-            inline const Vector2& halfSize() const;
+            const Vector2& halfSize() const;
 
-            inline Vector2& halfSize();
+            Vector2& halfSize();
 
             // SETTERS
 
-            inline void setCenter(const Vector2&);
+            void setCenter(const Vector2&);
 
-            inline void setHalfSize(const Vector2&);
+            void setHalfSize(const Vector2&);
 
         private:
 

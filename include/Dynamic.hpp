@@ -18,20 +18,20 @@ namespace afp{
 
             // GETTERS
 
-            inline const Vector2& force() const;
+            const Vector2& force() const;
 
-            inline Vector2& force();
+            Vector2& force();
 
-            inline const Vector2& speed() const;
+            const Vector2& speed() const;
 
-            inline Vector2& speed();
+            Vector2& speed();
 
 
             // SETTERS
 
-            inline void setForce(const Vector2&);
+            void setForce(const Vector2&);
 
-            inline void setSpeed(const Vector2&);
+            void setSpeed(const Vector2&);
 
         private:
 

@@ -20,18 +20,18 @@ namespace afp{
 
             // getters
 
-            inline const Vector2& gravityForce() const;
+            const Vector2& gravityForce() const;
 
-            inline Vector2& gravityForce();
+            Vector2& gravityForce();
 
-            inline float mass() const;
+            float mass() const;
 
 
             // setters
 
-            inline void setGravityForce(const Vector2&);
+            void setGravityForce(const Vector2&);
 
-            inline void setMass(float);
+            void setMass(float);
 
         private:
 

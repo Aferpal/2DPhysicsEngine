@@ -22,24 +22,24 @@ namespace afp{
 
             // getters
 
-            inline const Vector2& position() const;
+            const Vector2& position() const;
 
-            inline Vector2& position();
+            Vector2& position();
 
-            inline float scale() const;
+            float scale() const;
 
-            inline float rotationAngle() const;
+            float rotationAngle() const;
 
 
             // setters
 
-            inline void setPosition(const Vector2&);
+            void setPosition(const Vector2&);
 
-            inline void setPosition(Vector2&&);
+            void setPosition(Vector2&&);
 
-            inline void setScale(float);
+            void setScale(float);
 
-            inline void setRotationAngle(float);
+            void setRotationAngle(float);
 
 
 

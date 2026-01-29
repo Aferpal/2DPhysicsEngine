@@ -146,10 +146,10 @@ bool Vector2::operator==(Vector2&& other) const{
 
 // GETTERS
 
-inline float Vector2::getX() const {
+float Vector2::getX() const {
     return m_x;
 }
 
-inline float Vector2::getY() const {
+float Vector2::getY() const {
     return m_y;
 }

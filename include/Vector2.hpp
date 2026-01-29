@@ -46,9 +46,9 @@ class Vector2{
 
         // GETTERS
 
-        inline float getX() const;
+        float getX() const;
 
-        inline float getY() const;
+        float getY() const;
 
 };
 

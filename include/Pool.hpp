@@ -6,8 +6,13 @@
 
 namespace afp{
 
+    class basic_pool{
+        public:
+            virtual ~basic_pool() = default;
+    };
+
     template<typename T>
-    class Pool{
+    class Pool : public basic_pool {
 
         public:
             Pool() = default;
@@ -86,6 +91,18 @@ namespace afp{
 
             }
 
+            EntityID getEntityAt(std::size_t index){
+                if( index < dense_id.size() ){
+                    return dense_id[index];
+                }else{
+                    return -1;
+                }
+                
+            }
+
+            std::size_t size() const{
+                return dense_components.size();
+            }
 
 
         private:

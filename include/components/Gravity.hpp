@@ -1,7 +1,7 @@
 #ifndef _GRAVITY_
 #define _GRAVITY_
 
-#include "Vector2.hpp"
+#include <Vector2.hpp>
 
 namespace afp{
 

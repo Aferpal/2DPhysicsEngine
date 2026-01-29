@@ -1,4 +1,4 @@
-#include<Collider.hpp>
+#include<components/Collider.hpp>
 
 
 using namespace afp;

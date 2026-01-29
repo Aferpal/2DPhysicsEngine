@@ -2,9 +2,9 @@
 #define _REGISTRY_
 
 #include<unordered_map>
-#include<Pool.hpp>
+#include "Pool.hpp"
 #include<memory>
-#include<View.hpp>
+#include "View.hpp"
 
 namespace afp{
     

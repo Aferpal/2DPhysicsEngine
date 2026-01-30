@@ -3,7 +3,7 @@
 using namespace afp;
 
 
-Dynamic::Dynamic(const Vector2& force, const Vector2& speed): m_Force(force), m_Speed(speed){}
+Dynamic::Dynamic(const Vector2& force, const Vector2& speed, float mass): m_Force(force), m_Speed(speed), m_Mass(mass){}
 
 
 //GETTERS
@@ -16,8 +16,12 @@ const Vector2& Dynamic::speed() const { return m_Speed; }
 
 Vector2& Dynamic::speed(){ return m_Speed; }
 
+float Dynamic::mass() const { return m_Mass; }
+
 // SETTERS
 
 void Dynamic::setForce(const Vector2& force){ m_Force = force; }
 
 void Dynamic::setSpeed(const Vector2& speed){ m_Speed = speed; }
+
+void Dynamic::setMass(float mass){ m_Mass = mass; }

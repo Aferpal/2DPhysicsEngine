@@ -11,9 +11,7 @@ namespace afp{
 
             Gravity();
 
-            Gravity(float);
-
-            Gravity(const Vector2&, float);
+            Gravity(const Vector2&);
 
             Gravity(const Gravity&) = default;
 
@@ -24,20 +22,14 @@ namespace afp{
 
             Vector2& gravityForce();
 
-            float mass() const;
-
 
             // setters
 
             void setGravityForce(const Vector2&);
 
-            void setMass(float);
-
         private:
 
             Vector2 m_GravityForce;
-
-            float m_Mass;
 
     };
 

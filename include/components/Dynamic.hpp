@@ -11,7 +11,7 @@ namespace afp{
 
             Dynamic() = default;
 
-            Dynamic(const Vector2&, const Vector2&);
+            Dynamic(const Vector2&, const Vector2&, float);
 
             Dynamic(const Dynamic&) = default;
 
@@ -26,6 +26,8 @@ namespace afp{
 
             Vector2& speed();
 
+            float mass() const;
+
 
             // SETTERS
 
@@ -33,11 +35,15 @@ namespace afp{
 
             void setSpeed(const Vector2&);
 
+            void setMass(float);
+
         private:
 
             Vector2 m_Force;
 
             Vector2 m_Speed;
+
+            float m_Mass;
 
     };
 

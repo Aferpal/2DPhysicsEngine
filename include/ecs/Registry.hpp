@@ -51,6 +51,24 @@ namespace afp{
 
             }
 
+            template<typename T>
+            bool has(){
+                return data.find(type_id<T>()) != data.end();
+            }
+
+            template<typename T>
+            bool has(EntityID id){
+                if( !has<T>() ){
+                    return false;
+                }else{
+                    return getPool<T>().contains(id);
+                }
+            }
+
+            std::size_t size() const {
+                return data.size();
+            }
+
 
             template<typename T1, typename T2>
             View<T1, T2> view(){
